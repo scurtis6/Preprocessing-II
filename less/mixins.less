@@ -1,1 +1,13 @@
 // Mixins in here
+.button (@btnpadding, @btncolor, @btnbackground, @btnradius, @btnalign) {
+    padding: @btnpadding;
+    color: @btncolor;
+    background: @btnbackground;
+    border-radius: @btnradius;
+    text-align: @btnalign;
+}
+.page-width(){
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+}

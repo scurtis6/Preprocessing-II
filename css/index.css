@@ -218,20 +218,47 @@ header nav .links a {
   flex-wrap: wrap;
   justify-content: space-between;
 }
-.home .content-section .text-content {
+@media (max-width: 500px) {
+  .home .content-section {
+    flex-direction: column;
+    margin-left: 20px;
+  }
+}
+.home .text-content {
   width: 48%;
   padding-right: 1%;
 }
-.home .content-section .img-content {
+@media (max-width: 500px) {
+  .home .text-content {
+    width: 460px;
+  }
+}
+.home .img-content {
   width: 48%;
   padding-left: 1%;
 }
-.home .content-section .img-content img {
+@media (max-width: 500px) {
+  .home .img-content {
+    width: 500px;
+  }
+}
+.home .img-content img {
   border-radius: 10px;
+}
+@media (max-width: 500px) {
+  .home .img-content img {
+    height: 340px;
+  }
 }
 .home .inverse-content {
   padding-bottom: 30px;
   border-bottom: 2px dashed #C0C0C0;
+}
+@media (max-width: 500px) {
+  .home .inverse-content {
+    margin-right: 30px;
+    flex-direction: column-reverse;
+  }
 }
 .home .inverse-content .text-content {
   padding-left: 1%;
@@ -245,6 +272,11 @@ header nav .links a {
   width: 75%;
   margin: 0 auto 30px;
 }
+@media (max-width: 500px) {
+  .home .content-destination {
+    width: 450px;
+  }
+}
 .home .content-destination img {
   border-radius: 10px;
 }
@@ -254,9 +286,22 @@ header nav .links a {
   display: flex;
   justify-content: space-between;
 }
+@media (max-width: 500px) {
+  .home .content-pick {
+    width: 450px;
+    margin-left: 25px;
+    flex-direction: column;
+  }
+}
 .home .content-pick .destination {
   width: 30%;
   margin-bottom: 30px;
+}
+@media (max-width: 500px) {
+  .home .content-pick .destination {
+    width: 375px;
+    margin-left: 50px;
+  }
 }
 .home .content-pick .destination .btn {
   padding: 15px 20px;
@@ -265,12 +310,30 @@ header nav .links a {
   border-radius: 12px;
   text-align: center;
 }
+@media (max-width: 500px) {
+  .home .content-pick .destination .btn {
+    width: 350px;
+    font-size: 20px;
+  }
+}
 .home .top-content {
   padding-top: 30px;
   border-bottom: 2px dashed #C0C0C0;
 }
+@media (max-width: 500px) {
+  .home .top-content {
+    margin: 0 20px;
+    padding: 20px;
+    margin-top: -20px;
+  }
+}
 .home .top-content .top-text {
   padding-top: 30px;
+}
+@media (max-width: 500px) {
+  .home .top-content .top-text h1 {
+    font-size: 30px;
+  }
 }
 .home .top-content p {
   padding-top: 1rem;

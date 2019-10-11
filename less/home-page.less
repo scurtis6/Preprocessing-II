@@ -6,26 +6,43 @@
     flex-wrap: wrap;
     justify-content: space-between;
 
-   
-    
+   @media @mobile{
+     flex-direction: column;
+     margin-left: 20px;
+   }//this closes the query
+  }//this closes the .content-section 
     .text-content {
       width: 48%;
       padding-right: 1%;
+
+      @media @mobile{
+        width: 460px;
+      }//this closes the query
     }//this closes the .text-content
 
     .img-content {
       width: 48%;
       padding-left: 1%;
 
+      @media @mobile{
+        width: 500px;
+      }
       img {
         border-radius: 10px;
+        @media @mobile{
+          height: 340px;
+        }
       }//this closes the img
-    }//this closes the /img-content
-  }//this closes the .content-section
+    }//this closes the .img-content
+  
 
   .inverse-content {
     padding-bottom: 30px;
     border-bottom: 2px dashed @navigation-border;
+    @media @mobile{
+      margin-right: 30px;
+      flex-direction: column-reverse;
+    }
 
     .text-content {
       padding-left: 1%;
@@ -42,6 +59,10 @@
     width: 75%;
     margin: 0 auto 30px;
 
+    @media @mobile{
+      width: 450px;
+    }//this closes the query
+
     img {
       border-radius: 10px;
     }//this closes the img
@@ -53,11 +74,27 @@
     display: flex;
     justify-content: space-between;
 
+    @media @mobile{
+      width: 450px;
+      margin-left: 25px;
+      flex-direction: column;
+    }//this closes the query
+
     .destination {
       width: 30%;
       margin-bottom: 30px;
+
+      @media @mobile{
+        width: 375px;
+        margin-left: 50px;
+      }//this closes the query
       .btn{
         .bottonstyle(15px 20px; white; #17A2B8; 12px; center);
+
+        @media @mobile{
+          width: 350px;
+          font-size: 20px;
+        }
       }//this closes the .btn
     }//this closes the .destination
   }//this closes the . content-pick 
@@ -65,13 +102,25 @@
   .top-content{
     padding-top: 30px;
     border-bottom: 2px dashed @navigation-border;
+
+    @media @mobile{
+      margin: 0 20px;
+      padding: 20px;
+      margin-top: -20px;
+    }//this closes the query
   
     .top-text{
       padding-top: 30px;
+
+      h1{
+        @media @mobile{
+          font-size: 30px;
+      }
+    }
     }//this closes the .top-text
     p{
       padding-top: 1rem;
     }//this closes the p
   }//this closes the .top-content
-}// home
+} // home
 

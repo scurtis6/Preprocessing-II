@@ -12,7 +12,19 @@ header{
     flex-direction: row;
     justify-content: space-between;
     align-content: center;
-    
+
+        @media @mobile{
+            flex-direction: column;
+            justify-items: center;
+            align-items: center;
+            padding-bottom: 5px;
+        
+        @media @mobile{
+            .funbus{
+                margin-bottom: 15px;
+    }//this closes .funbus
+    }//this closes the query
+}//this closes the query
     .links{
         a{
             margin: 0 20px;
@@ -23,6 +35,3 @@ header{
     }//this closes the .links
 }//this closes the nav
 }//this closes the header
-
-
-   

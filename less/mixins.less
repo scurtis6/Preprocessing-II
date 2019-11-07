@@ -11,3 +11,24 @@
     width: 100%;
     margin: 0 auto;
 }
+
+// .animation(@sec, @aniname){
+//     animation-duration: @sec;
+//     animation-name: @aniname;
+// }
+
+// @keyframes color-change {
+//     from {background-color: red;}
+//     to {background-color: yellow;}
+//   }
+.keyframes(@name, @arguments){
+    @-moz-keyframes @name {@arguments(); }
+    @-webkit-keyframes @name { @arguments(); }
+	@keyframes @name { @arguments(); }
+}
+
+.animation(@arguments) {
+	-webkit-animation: @arguments;
+	-moz-animation: @arguments;
+	animation: @arguments;
+}

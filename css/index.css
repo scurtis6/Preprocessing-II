@@ -83,7 +83,7 @@ time,
 mark,
 audio,
 video {
-  margin: 0;
+  margin: 0 0.5%;
   padding: 0;
   border: 0;
   font-size: 100%;
@@ -148,16 +148,16 @@ h1 {
 }
 h2 {
   font-size: 3.2rem;
-  padding-bottom: 10px;
+  padding-bottom: 1%;
 }
 h4 {
   font-size: 2.5rem;
-  padding-bottom: 10px;
+  padding-bottom: 1%;
 }
 p {
   line-height: 1.5;
   font-size: 1.6rem;
-  padding-bottom: 10px;
+  padding-bottom: 1%;
 }
 img {
   max-width: 100%;
@@ -190,13 +190,23 @@ header nav {
     padding-bottom: 5px;
   }
 }
-@media (max-width: 500px) and (max-width: 500px) {
+header nav .funbus {
+  width: 40%;
+  margin-left: -6%;
+}
+@media (max-width: 500px) {
   header nav .funbus {
     margin-bottom: 15px;
   }
 }
-header nav .links a {
-  margin: 0 20px;
+header .links {
+  width: 50%;
+  margin-right: -4%;
+  text-align: right;
+  padding-top: 2%;
+}
+header .links a {
+  margin: 0 5%;
   font-size: 1.4rem;
   color: black;
   text-decoration: none;
@@ -210,7 +220,7 @@ header nav .links a {
   text-align: center;
   color: #212529;
   font-size: 1.6rem;
-  padding: 20px;
+  padding: 1%;
 }
 .home .top-content .top-text h1 {
   -webkit-animation: fade-in 0.2s linear infinite alternate;
@@ -242,7 +252,7 @@ header nav .links a {
   }
 }
 .home .content-section {
-  margin: 30px 0;
+  margin: 4% 0;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -250,7 +260,7 @@ header nav .links a {
 @media (max-width: 500px) {
   .home .content-section {
     flex-direction: column;
-    margin-left: 20px;
+    margin-left: 2%;
   }
 }
 .home .text-content {
@@ -272,20 +282,20 @@ header nav .links a {
   }
 }
 .home .img-content img {
-  border-radius: 10px;
+  border-radius: 3%;
 }
 @media (max-width: 500px) {
   .home .img-content img {
-    height: 340px;
+    height: 57.5vh;
   }
 }
 .home .inverse-content {
-  padding-bottom: 30px;
+  padding-bottom: 4%;
   border-bottom: 2px dashed #C0C0C0;
 }
 @media (max-width: 500px) {
   .home .inverse-content {
-    margin-right: 30px;
+    margin-right: 6%;
     flex-direction: column-reverse;
   }
 }
@@ -299,7 +309,7 @@ header nav .links a {
 }
 .home .content-destination {
   width: 75%;
-  margin: 0 auto 30px;
+  margin: 0 auto 4%;
 }
 @media (max-width: 500px) {
   .home .content-destination {
@@ -307,7 +317,7 @@ header nav .links a {
   }
 }
 .home .content-destination img {
-  border-radius: 10px;
+  border-radius: 3%;
 }
 .home .content-pick {
   padding-top: 30px;
@@ -324,16 +334,16 @@ header nav .links a {
 }
 .home .content-pick .destination {
   width: 30%;
-  margin-bottom: 30px;
+  margin-bottom: 3.5%;
 }
 @media (max-width: 500px) {
   .home .content-pick .destination {
-    width: 375px;
-    margin-left: 50px;
+    width: 85%;
+    margin-left: 12%;
   }
 }
 .home .content-pick .destination .btn {
-  padding: 15px 20px;
+  padding: 4% 27%;
   color: white;
   background: #17A2B8;
   border-radius: 12px;
@@ -341,8 +351,13 @@ header nav .links a {
 }
 @media (max-width: 500px) {
   .home .content-pick .destination .btn {
-    width: 350px;
-    font-size: 20px;
+    padding: 4% 15%;
+    color: white;
+    background: #17A2B8;
+    border-radius: 12px;
+    text-align: center;
+    width: 97%;
+    font-size: 2rem;
   }
 }
 .home .top-content {
@@ -366,4 +381,32 @@ header nav .links a {
 }
 .home .top-content p {
   padding-top: 1rem;
+}
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+.container form .row .col-text #country {
+  width: 50%;
+  height: 5vh;
+}
+.container form .row .col-text #fname {
+  width: 50%;
+  height: 5vh;
+}
+.container form .row .col-text #lname {
+  width: 50%;
+  height: 5vh;
+}
+.container form .row .col-text #email {
+  width: 50%;
+  height: 5vh;
+}
+.container form .row .col-text #comment {
+  width: 95%;
+  height: 50vh;
+}
+.container form .row .button {
+  width: 95%;
+  height: 4vh;
 }

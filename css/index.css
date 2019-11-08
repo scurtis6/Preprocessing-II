@@ -205,6 +205,14 @@ header .links {
   text-align: right;
   padding-top: 2%;
 }
+@media (max-width: 500px) {
+  header .links {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
+}
 header .links a {
   margin: 0 5%;
   font-size: 1.4rem;
@@ -216,11 +224,41 @@ header .links a {
   border-top: 2px dashed silver;
   background: #FFEBCD;
 }
+@media (max-width: 500px) {
+  .footer {
+    margin: 0 -1%;
+    width: 102%;
+    padding: 2% 0;
+  }
+}
 .footer p {
   text-align: center;
   color: #212529;
   font-size: 1.6rem;
   padding: 1%;
+}
+@media (max-width: 500px) {
+  .home .top-content {
+    margin: 0 2%;
+    padding: 4%;
+    margin-top: -4%;
+  }
+}
+@media (max-width: 500px) {
+  .home .top-content .header-img {
+    max-width: 110%;
+    margin-left: -4.5%;
+  }
+}
+.home .top-content .top-text {
+  padding-top: 3%;
+  width: 100%;
+}
+@media (max-width: 500px) {
+  .home .top-content .top-text {
+    width: 100%;
+    margin-left: -4%;
+  }
 }
 .home .top-content .top-text h1 {
   -webkit-animation: fade-in 0.2s linear infinite alternate;
@@ -251,16 +289,27 @@ header .links a {
     opacity: 1;
   }
 }
+@media (max-width: 500px) {
+  .home .top-content .top-text h1 {
+    font-size: 30px;
+  }
+}
+.home .top-content .top-text p {
+  padding-top: 1rem;
+}
 .home .content-section {
-  margin: 4% 0;
+  border-top: 2px dashed #C0C0C0;
+  margin: 4% 0 -2% 0;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  padding-top: 4%;
 }
 @media (max-width: 500px) {
   .home .content-section {
     flex-direction: column;
-    margin-left: 2%;
+    margin: 0 3%;
+    padding-top: 4%;
   }
 }
 .home .text-content {
@@ -269,7 +318,8 @@ header .links a {
 }
 @media (max-width: 500px) {
   .home .text-content {
-    width: 460px;
+    width: 100%;
+    margin-left: -1%;
   }
 }
 .home .img-content {
@@ -278,7 +328,9 @@ header .links a {
 }
 @media (max-width: 500px) {
   .home .img-content {
-    width: 500px;
+    width: 100%;
+    padding: 0;
+    margin-left: -1%;
   }
 }
 .home .img-content img {
@@ -292,11 +344,15 @@ header .links a {
 .home .inverse-content {
   padding-bottom: 4%;
   border-bottom: 2px dashed #C0C0C0;
+  border-top: none;
+  margin: 0;
 }
 @media (max-width: 500px) {
   .home .inverse-content {
     margin-right: 6%;
     flex-direction: column-reverse;
+    border-top: none;
+    margin-left: 3%;
   }
 }
 .home .inverse-content .text-content {
@@ -307,28 +363,42 @@ header .links a {
   padding-right: 1%;
   padding-left: 0;
 }
+@media (max-width: 500px) {
+  .home .inverse-content .img-content {
+    width: 102%;
+    padding: 0;
+    margin-left: -1%;
+  }
+}
 .home .content-destination {
-  width: 75%;
-  margin: 0 auto 4%;
+  width: 69%;
+  margin: 0 16%;
+  padding: 3% 0;
 }
 @media (max-width: 500px) {
   .home .content-destination {
-    width: 450px;
+    width: 93%;
+    margin: 2% 0 0 2%;
   }
 }
 .home .content-destination img {
   border-radius: 3%;
 }
+@media (max-width: 500px) {
+  .home .content-destination img {
+    width: 100%;
+  }
+}
 .home .content-pick {
-  padding-top: 30px;
+  padding-top: 3%;
   border-top: 2px dashed #C0C0C0;
   display: flex;
   justify-content: space-between;
 }
 @media (max-width: 500px) {
   .home .content-pick {
-    width: 450px;
-    margin-left: 25px;
+    width: 89%;
+    margin-left: 3%;
     flex-direction: column;
   }
 }
@@ -341,6 +411,10 @@ header .links a {
     width: 85%;
     margin-left: 12%;
   }
+}
+.home .content-pick .destination p {
+  width: 92%;
+  margin-top: 2%;
 }
 .home .content-pick .destination .btn {
   padding: 4% 27%;
@@ -359,28 +433,6 @@ header .links a {
     width: 97%;
     font-size: 2rem;
   }
-}
-.home .top-content {
-  padding-top: 30px;
-  border-bottom: 2px dashed #C0C0C0;
-}
-@media (max-width: 500px) {
-  .home .top-content {
-    margin: 0 20px;
-    padding: 20px;
-    margin-top: -20px;
-  }
-}
-.home .top-content .top-text {
-  padding-top: 30px;
-}
-@media (max-width: 500px) {
-  .home .top-content .top-text h1 {
-    font-size: 30px;
-  }
-}
-.home .top-content p {
-  padding-top: 1rem;
 }
 .container {
   max-width: 900px;

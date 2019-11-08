@@ -1,0 +1,28 @@
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+.container form .row .col-text #country {
+  width: 50%;
+  height: 5vh;
+}
+.container form .row .col-text #fname {
+  width: 50%;
+  height: 5vh;
+}
+.container form .row .col-text #lname {
+  width: 50%;
+  height: 5vh;
+}
+.container form .row .col-text #email {
+  width: 50%;
+  height: 5vh;
+}
+.container form .row .col-text #comment {
+  width: 95%;
+  height: 50vh;
+}
+.container form .row .button {
+  width: 95%;
+  height: 4vh;
+}
